@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    name: springboot
+    url: jdbc:mysql://127.0.0.1:3006/springboot?characterEncoding=utf8&useSSL=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # mapper映射文件的位置
+  type-aliases-package: com.example.demo.entity # 实体类的位置
